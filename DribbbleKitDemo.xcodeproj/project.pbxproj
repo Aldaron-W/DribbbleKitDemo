@@ -22,6 +22,8 @@
 		336B93D51B79D22C0046B5F4 /* AWAttachmentItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 336B93D41B79D22C0046B5F4 /* AWAttachmentItem.m */; };
 		336B93D81B79D2430046B5F4 /* AWCommentItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 336B93D71B79D2430046B5F4 /* AWCommentItem.m */; };
 		336B93DB1B79D25D0046B5F4 /* AWLikeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 336B93DA1B79D25D0046B5F4 /* AWLikeItem.m */; };
+		33DAF41F1B79E0D50082FB0A /* DirbbbleKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DAF41E1B79E0D50082FB0A /* DirbbbleKit.m */; };
+		33DAF4231B79EA260082FB0A /* AuthenticationBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DAF4221B79EA260082FB0A /* AuthenticationBrowser.m */; };
 		4BF4930C0868263330996705 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACC812D6B9137519897611D /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +68,11 @@
 		336B93D71B79D2430046B5F4 /* AWCommentItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWCommentItem.m; sourceTree = "<group>"; };
 		336B93D91B79D25D0046B5F4 /* AWLikeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWLikeItem.h; sourceTree = "<group>"; };
 		336B93DA1B79D25D0046B5F4 /* AWLikeItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWLikeItem.m; sourceTree = "<group>"; };
+		33DAF41D1B79E0D50082FB0A /* DirbbbleKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirbbbleKit.h; sourceTree = "<group>"; };
+		33DAF41E1B79E0D50082FB0A /* DirbbbleKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirbbbleKit.m; sourceTree = "<group>"; };
+		33DAF4211B79EA260082FB0A /* AuthenticationBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticationBrowser.h; sourceTree = "<group>"; };
+		33DAF4221B79EA260082FB0A /* AuthenticationBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthenticationBrowser.m; sourceTree = "<group>"; };
+		33DAF4241B79F6AA0082FB0A /* DribbbleKitConsts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DribbbleKitConsts.h; path = DribbbleKit/Consts/DribbbleKitConsts.h; sourceTree = SOURCE_ROOT; };
 		9ACC812D6B9137519897611D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9EF345BDB7AE4B47EDB5C66 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -154,10 +161,13 @@
 		336B93BC1B79CE7F0046B5F4 /* DribbbleKit */ = {
 			isa = PBXGroup;
 			children = (
+				33DAF4201B79E9F60082FB0A /* Authentication */,
 				336B93BD1B79D0D50046B5F4 /* Consts */,
 				336B93BE1B79D0D50046B5F4 /* Helpers */,
 				336B93BF1B79D0D50046B5F4 /* Items */,
 				336B93C01B79D0D50046B5F4 /* Models */,
+				33DAF41D1B79E0D50082FB0A /* DirbbbleKit.h */,
+				33DAF41E1B79E0D50082FB0A /* DirbbbleKit.m */,
 			);
 			path = DribbbleKit;
 			sourceTree = SOURCE_ROOT;
@@ -165,6 +175,7 @@
 		336B93BD1B79D0D50046B5F4 /* Consts */ = {
 			isa = PBXGroup;
 			children = (
+				33DAF4241B79F6AA0082FB0A /* DribbbleKitConsts.h */,
 			);
 			path = Consts;
 			sourceTree = "<group>";
@@ -204,6 +215,15 @@
 			children = (
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		33DAF4201B79E9F60082FB0A /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				33DAF4211B79EA260082FB0A /* AuthenticationBrowser.h */,
+				33DAF4221B79EA260082FB0A /* AuthenticationBrowser.m */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		912AD2310D0E5183BB1F8F74 /* Pods */ = {
@@ -358,6 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33DAF4231B79EA260082FB0A /* AuthenticationBrowser.m in Sources */,
 				336B93D51B79D22C0046B5F4 /* AWAttachmentItem.m in Sources */,
 				336B93CF1B79D1DF0046B5F4 /* AWProjectItem.m in Sources */,
 				336B939F1B79CCC90046B5F4 /* ViewController.m in Sources */,
@@ -368,6 +389,7 @@
 				336B93D21B79D2030046B5F4 /* AWTeamItem.m in Sources */,
 				336B93DB1B79D25D0046B5F4 /* AWLikeItem.m in Sources */,
 				336B93C61B79D1290046B5F4 /* AWBucketItem.m in Sources */,
+				33DAF41F1B79E0D50082FB0A /* DirbbbleKit.m in Sources */,
 				336B93991B79CCC90046B5F4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
